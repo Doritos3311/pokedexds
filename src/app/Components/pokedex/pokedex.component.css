@@ -1,0 +1,36 @@
+.pokemon-image {
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto; /* Centramos la imagen */
+    height: 350px;
+    width: 350px;
+    border: 3px solid #4a00e0; /* Borde neón */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(142, 45, 226, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrar botones horizontalmente */
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 20px; /* Espacio superior para separar de la imagen */
+}
+
+.cyber-button {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #4a00e0);
+    border: 2px solid #f72585;
+    color: #f72585;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(247, 37, 133, 0.8), 0 0 10px rgba(142, 45, 226, 0.6);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 20px rgba(142, 45, 226, 0.5);
+}
+
+.cyber-button:hover {
+    background: linear-gradient(90deg, #302b63, #4a00e0, #0f0c29);
+    box-shadow: 0 0 20px rgba(247, 37, 133, 0.8), 0 0 30px rgba(142, 45, 226, 0.6);
+    transform: scale(1.05);
+}

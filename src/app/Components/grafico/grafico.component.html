@@ -1,0 +1,23 @@
+<section class="stats">
+    <div class="health-indicator">
+        <span class="texto">VIDA</span>
+        <div class="health-bar">
+            <div class="health-fill" [ngStyle]="{ width: vidaPokemon + '%' }"></div>
+            <span class="health-icon" *ngFor="let life of getLifeIcons()">{{life}}</span>
+        </div>
+    </div>
+    <div class="health-indicator">
+        <span class="texto">DEFENSA</span>
+        <div class="health-bar">
+            <div class="defense-fill" [ngStyle]="{ width: ataquePokemon * 20 + '%' }"></div>
+            <span class="defense-icon" *ngFor="let defense of getDefenseIcons()">{{defense}}</span>
+        </div>
+    </div>
+    <div class="health-indicator">
+        <span class="texto">ATAQUE</span>
+        <div class="health-bar">
+            <div class="attack-fill" [ngStyle]="{ width: ataquePokemon * 20 + '%' }"></div>
+            <span class="attack-icon" *ngFor="let attack of getAttackIcons()">{{attack}}</span>
+        </div>
+    </div>
+</section>

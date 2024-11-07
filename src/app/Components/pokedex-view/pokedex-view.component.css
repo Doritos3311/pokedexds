@@ -1,0 +1,76 @@
+.pokedex-view {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    border-radius: 20px;
+    border: 3px solid #4a00e0;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6), 0 0 10px rgba(255, 20, 147, 0.3);
+    padding: 20px;
+    max-width: 576px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #f72585; /* Rosa neón */
+    font-weight: 700;
+    text-shadow: 0px 0px 8px rgba(247, 37, 133, 0.8), 0px 0px 15px rgba(142, 45, 226, 0.6);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.pokedex {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+.point {
+    position: absolute;
+    bottom: 10px;
+    background-color: #f72585; 
+    border: 2px solid #4a00e0;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 0 6px rgba(142, 45, 226, 0.8);
+    animation: pulse 2s infinite;
+}
+
+.point:nth-child(1) {
+    left: calc(50% - 30px);
+}
+
+.point:nth-child(2) {
+    left: calc(50% + 30px);
+}
+
+.grafico {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo translúcido adicional */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    gap: 20px;
+    padding: 5px;
+    box-shadow: inset 0 0 10px rgba(142, 45, 226, 0.4);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
